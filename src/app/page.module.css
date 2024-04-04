@@ -20,15 +20,6 @@
 /* Mobile */
 @media (max-width: 700px) {
 
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
   .description {
     font-size: 0.8rem;
   }
