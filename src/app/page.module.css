@@ -25,14 +25,6 @@
 	.description a {
 		padding: 1rem;
 	}
-
-	.description p,
-	.description div {
-		display: flex;
-		justify-content: center;
-		position: fixed;
-		width: 100%;
-	}
 }
 
 /* Tablet and Smaller Desktop */
