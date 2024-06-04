@@ -18,13 +18,7 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-	.description {
-		font-size: 0.8rem;
-	}
 
-	.description a {
-		padding: 1rem;
-	}
 }
 
 /* Tablet and Smaller Desktop */
