@@ -3,9 +3,6 @@
 }
 
 @media (prefers-reduced-motion) {
-	.card:hover span {
-		transform: none;
-	}
 }
 
 /* Mobile */
