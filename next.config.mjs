@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+export default {
+	env: {
+		GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+		GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+		FACEBOOK_CLIENT_ID: process.env.FACEBOOK_CLIENT_ID,
+		FACEBOOK_CLIENT_SECRET: process.env.FACEBOOK_CLIENT_SECRET,
+		MICROSOFT_CLIENT_ID: process.env.MICROSOFT_CLIENT_ID,
+		MICROSOFT_CLIENT_SECRET: process.env.MICROSOFT_CLIENT_SECRET,
+		NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+	},
+};
