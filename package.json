@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
     "aws-sdk": "^2.1653.0",
     "axios": "^1.7.2",
     "mongoose": "^8.4.4",
