@@ -1,73 +1,95 @@
 @import './base';
 
- :root {
+/*
+  Defining CSS custom properties (variables) for consistent theming
+  throughout the stylesheet. These variables can be reused across the
+  entire document, making it easier to maintain and update the design.
+*/
+:root {
+	/* Maximum width for the layout */
 	--max-width: 1100px;
+
+	/* Default border-radius for UI elements */
 	--border-radius: 12px;
+
+	/* Font stack for monospaced text, prioritizing system fonts for better performance */
 	--font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
 	"Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
 	"Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+	/* Foreground and background colors for the light theme */
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
 
+	/* Glowing effects for primary and secondary elements in light theme */
 	--primary-glow: conic-gradient(
-			from 180deg at 50% 50%,
-			#16abff33 0deg,
-			#0885ff33 55deg,
-			#54d6ff33 120deg,
-			#0071ff33 160deg,
-			transparent 360deg
+					from 180deg at 50% 50%,
+					#16abff33 0deg,
+					#0885ff33 55deg,
+					#54d6ff33 120deg,
+					#0071ff33 160deg,
+					transparent 360deg
 	);
 	--secondary-glow: radial-gradient(
-			rgba(255, 255, 255, 1),
-			rgba(255, 255, 255, 0)
+					rgba(255, 255, 255, 1),
+					rgba(255, 255, 255, 0)
 	);
 
+	/* Colors and gradients for tile elements in light theme */
 	--tile-start-rgb: 239, 245, 249;
 	--tile-end-rgb: 228, 232, 233;
 	--tile-border: conic-gradient(
-			#00000080,
-			#00000040,
-			#00000030,
-			#00000020,
-			#00000010,
-			#00000010,
-			#00000080
+					#00000080,
+					#00000040,
+					#00000030,
+					#00000020,
+					#00000010,
+					#00000010,
+					#00000080
 	);
 
+	/* Colors for callouts and cards in light theme */
 	--callout-rgb: 238, 240, 241;
 	--callout-border-rgb: 172, 175, 176;
 	--card-rgb: 180, 185, 188;
 	--card-border-rgb: 131, 134, 135;
 }
 
+/*
+  Dark theme overrides, applied when the user prefers a dark color scheme.
+  This block redefines the same variables used in the light theme with darker values.
+*/
 @media (prefers-color-scheme: dark) {
 	:root {
+		/* Foreground and background colors for the dark theme */
 		--foreground-rgb: 255, 255, 255;
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
 
+		/* Glowing effects for primary and secondary elements in dark theme */
 		--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
 		--secondary-glow: linear-gradient(
-				to bottom right,
-				rgba(1, 65, 255, 0),
-				rgba(1, 65, 255, 0),
-				rgba(1, 65, 255, 0.3)
+						to bottom right,
+						rgba(1, 65, 255, 0),
+						rgba(1, 65, 255, 0),
+						rgba(1, 65, 255, 0.3)
 		);
 
+		/* Colors and gradients for tile elements in dark theme */
 		--tile-start-rgb: 2, 13, 46;
 		--tile-end-rgb: 2, 5, 19;
 		--tile-border: conic-gradient(
-				#ffffff80,
-				#ffffff40,
-				#ffffff30,
-				#ffffff20,
-				#ffffff10,
-				#ffffff10,
-				#ffffff80
+						#ffffff80,
+						#ffffff40,
+						#ffffff30,
+						#ffffff20,
+						#ffffff10,
+						#ffffff10,
+						#ffffff80
 		);
 
+		/* Colors for callouts and cards in dark theme */
 		--callout-rgb: 20, 20, 20;
 		--callout-border-rgb: 108, 108, 108;
 		--card-rgb: 100, 100, 100;
@@ -75,23 +97,36 @@
 	}
 }
 
+/*
+  Applying universal box-sizing to ensure padding and borders are
+  included in the element's total width and height. Also, resetting
+  default padding and margin to 0 for consistency.
+*/
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
+/*
+  Setting up the main HTML and body elements to prevent horizontal
+  overflow issues by capping the maximum width and hiding any overflow.
+*/
 html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
 }
 
+/*
+  Defining the default text color and background gradient for the body
+  element using the theme-specific variables defined earlier.
+*/
 body {
 	color: rgb(var(--foreground-rgb));
 	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
+					to bottom,
+					transparent,
+					rgb(var(--background-end-rgb))
 	) rgb(var(--background-start-rgb));
 }
