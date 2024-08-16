@@ -10,6 +10,11 @@ export default {
 		// Microsoft OAuth 2.0 Client Secret for authentication
 		MICROSOFT_CLIENT_SECRET: process.env.MICROSOFT_CLIENT_SECRET,
 		
+		// Apple OAuth 2.0 Client ID for authentication
+		APPLE_CLIENT_ID: process.env.APPLE_CLIENT_ID,
+		// Apple OAuth 2.0 Client Secret for authentication
+		APPLE_CLIENT_SECRET: process.env.APPLE_CLIENT_SECRET,
+		
 		// Public API URL for client-side requests
 		NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
 	},
