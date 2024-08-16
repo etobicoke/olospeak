@@ -5,7 +5,7 @@
 
 ## Project Description
 
-Olospeak is a [Next.js](https://nextjs.org/) application designed to be a private and secure web application. It uses various modern web technologies including React, Redux, and TailwindCSS, and integrates with multiple OAuth providers such as Google, Facebook, and Microsoft for authentication.
+Olospeak is a [Next.js](https://nextjs.org/) web application. It uses various modern web technologies including React, Redux, and TailwindCSS, and integrates with multiple OAuth providers such as Google, Facebook, and Microsoft for authentication.
 
 ## Installation
 
