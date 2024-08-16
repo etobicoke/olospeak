@@ -12,7 +12,7 @@ Olospeak is a [Next.js](https://nextjs.org/) web application. It uses various mo
 To get started with Olospeak, clone the repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/your-username/olospeak.git
+git clone https://github.com/gustii/olospeak.git
 cd olospeak
 npm install
 ```
