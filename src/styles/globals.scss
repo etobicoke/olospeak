@@ -130,3 +130,8 @@ body {
 					rgb(var(--background-end-rgb))
 	) rgb(var(--background-start-rgb));
 }
+
+/* Apply monospace font to code blocks */
+code, pre {
+	font-family: var(--font-mono);
+}
