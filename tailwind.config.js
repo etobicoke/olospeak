@@ -9,22 +9,27 @@
  */
 
 module.exports = {
-	// Specify the paths to all of the template files in your project
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",      // Include all JavaScript and TypeScript files in the 'pages' directory and subdirectories
 		"./components/**/*.{js,ts,jsx,tsx}", // Include all JavaScript and TypeScript files in the 'components' directory and subdirectories
 	],
-	
-	// Extend the default theme with custom values (optional)
 	theme: {
 		extend: {
-			// You can add custom colors, spacing, fonts, etc. here
+			// Custom colors for primary and secondary use cases
+			colors: {
+				primary: '#007BFF',
+				secondary: '#6C757D',
+			},
+			// Custom font families
+			fontFamily: {
+				sans: ['Helvetica', 'Arial', 'sans-serif'],
+			},
 		},
 	},
-	
-	// Add any custom plugins here (optional)
 	plugins: [
-		// You can include Tailwind CSS plugins such as typography, forms, etc.
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
 	],
 }
+
 
