@@ -11,7 +11,7 @@ html, body {
 }
 
 /* Optional enhanced focus state */
-:focus {
-    outline: 2px solid #007BFF;
+:focus-visible {
+    outline: 2px solid var(--primary-color, #007BFF);
     outline-offset: 2px;
 }
