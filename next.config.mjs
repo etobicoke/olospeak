@@ -1,3 +1,14 @@
+/**
+ * Configuration file for environment variables.
+ *
+ * This file exports an object that defines environment variables required for the application's
+ * OAuth authentication and public API access. These variables must be set in the environment
+ * before running the application. This setup supports authentication via Google, Microsoft,
+ * and Apple OAuth 2.0 services, as well as defining the public API URL for client-side requests.
+ *
+ * Ensure that these environment variables are securely set in your deployment environment.
+ */
+
 export default {
 	env: {
 		// Google OAuth 2.0 Client ID for authentication
