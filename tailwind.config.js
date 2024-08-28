@@ -17,8 +17,6 @@ module.exports = {
 		extend: {
 			// Custom colors for primary and secondary use cases
 			colors: {
-				primary: '#007BFF',
-				secondary: '#6C757D',
 			},
 			// Custom font families
 			fontFamily: {
