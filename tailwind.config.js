@@ -20,7 +20,6 @@ module.exports = {
 			},
 			// Custom font families
 			fontFamily: {
-				sans: ['Helvetica', 'Arial', 'sans-serif'],
 			},
 		},
 	},
