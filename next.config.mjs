@@ -1,15 +1,16 @@
+import withPWA from 'next-pwa';
+
 /**
- * Configuration file for environment variables.
+ * Configuration file for environment variables and PWA setup.
  *
  * This file exports an object that defines environment variables required for the application's
- * OAuth authentication and public API access. These variables must be set in the environment
- * before running the application. This setup supports authentication via Google, Microsoft,
- * and Apple OAuth 2.0 services, as well as defining the public API URL for client-side requests.
+ * OAuth authentication and public API access. It also configures the application as a Progressive
+ * Web App (PWA) using the next-pwa package.
  *
  * Ensure that these environment variables are securely set in your deployment environment.
  */
 
-export default {
+export default withPWA({
 	env: {
 		// Google OAuth 2.0 Client ID for authentication
 		GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
@@ -29,4 +30,10 @@ export default {
 		// Public API URL for client-side requests
 		NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
 	},
-};
+	pwa: {
+		dest: 'public', // This is where the generated service worker and other files will be stored
+		disable: process.env.NODE_ENV === 'development', // Disable PWA in development mode
+		register: true,
+		skipWaiting: true,
+	},
+});
