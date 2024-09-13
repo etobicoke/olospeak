@@ -15,6 +15,12 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			// Custom colors for primary and secondary use cases
+			colors: {
+			},
+			// Custom font families
+			fontFamily: {
+			},
 		},
 	},
 	plugins: [
