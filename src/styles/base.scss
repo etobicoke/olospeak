@@ -1,6 +1,5 @@
 /*
-  Base styles that provide a foundation for the entire stylesheet.
-  Minimal styles since Tailwind will handle most of the heavy lifting.
+  Minimal base styles to complement Tailwind CSS.
 */
 
 /* Basic Reset */
@@ -8,10 +7,26 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }
 
 /* Optional enhanced focus state */
 :focus-visible {
     outline: 2px solid var(--primary-color, #007BFF);
-    outline-offset: 2px;
+    outline-offset: 4px;
+}
+
+/* Remove default padding from lists */
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
