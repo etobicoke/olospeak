@@ -1,0 +1,136 @@
+/* _reset.scss */
+
+/* Box sizing rule for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Basic reset for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Set default border and padding */
+body, div, section, article, aside, footer, header, nav, figure {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Remove list styles on ul, ol */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove default margin from headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Ensure buttons inherit font styles and remove borders */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* Anchor tags reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image reset - Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove default form element styles */
+input, textarea, select, button {
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+}
+
+/* Remove outline for better control on focus states */
+:focus {
+    outline: none;
+}
+
+/* Optional enhanced focus state for better accessibility */
+:focus-visible {
+    outline: 2px solid var(--primary-color, #007BFF);
+    outline-offset: 4px;
+}
+
+/* Table reset - Remove spacing and collapse borders */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Set a neutral style for blockquote */
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--blockquote-bg, #f9f9f9);
+    border-left: 4px solid var(--primary-color, #007BFF);
+}
+
+/* Reset fieldset, legend */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+}
+
+/* General reset for iframe */
+iframe {
+    border: 0;
+}
+
+/* Addressing form elements: checkbox, radio buttons, etc. */
+input[type="checkbox"],
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove default styles for figures */
+figure {
+    margin: 0;
+}
+
+/* Disable text-decoration for all elements that inherit this property */
+abbr[title] {
+    text-decoration: none;
+}
