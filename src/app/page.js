@@ -1,12 +1,11 @@
-import '../../styles/globals.scss'
+import '../styles/globals.scss'
+import React from 'react'
+import HomePage from './components/HomePage'
 
-export default function RootLayout({ children }) {
-	return (
-		<html lang="en">
-			<body>
-				<nav>Navigation</nav>
-				<section>First Section</section>
-			</body>
-		</html>
-	)
+export default function page() {
+  return (
+	<>
+		<HomePage />
+	</>
+  )
 }
