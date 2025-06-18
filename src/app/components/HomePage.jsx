@@ -42,7 +42,7 @@ export default function HomePage() {
       )}
       {showTextAndLogo1 && (
         <motion.h1
-          style={{ position: "absolute", top: "40%", left: "50%", translate: "-50% -50%", margin: 0, fontSize: 28, color: "#000", textAlign: "center", whiteSpace: "nowrap" }}
+          style={{ position: "absolute", top: "40%", left: "50%", translate: "-50% -50%", margin: 0, fontSize: 28, color: "#000", textAlign: "center", }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
